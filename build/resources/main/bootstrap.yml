@@ -1,0 +1,23 @@
+spring:
+  profiles: development
+  cloud:
+    config:
+      name: product-catalog
+      uri: http://localhost:8888
+      failFast: false
+---
+spring:
+  profiles: production
+  cloud:
+    config:
+      name: product-catalog
+      uri: http://localhost:8888
+      failFast: true
+---
+spring:
+  profiles: client
+  cloud:
+    config:
+      name: product-catalog
+      uri: http://localhost:8888
+      failFast: true

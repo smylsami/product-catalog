@@ -23,6 +23,7 @@ public class ProductController {
         List<Product> list =  new ArrayList<>();
         list.add(new Product(UUID.randomUUID(), "Prod1"));
         list.add(new Product(UUID.randomUUID(), "Prod2"));
+        list.add(new Product(UUID.randomUUID(), "Prod3-new"));
 
         return new ResponseEntity<>(list, HttpStatus.OK);
     }
